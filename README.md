@@ -1,20 +1,21 @@
-QuickPrimeRoots
+# QuickPrimeRoots
 
 Helps you find all prime roots of one number at a time quickly.
 
-Build:
+## Build:
 first navigate into build directory then:
 
-  cmake .
-  make
+  1. cmake .
+  2. make
 
-Run:
+## Run:
 to run the executable run:
 
-  ./QPRs number
+  - ./QPRs number
 
-Example:
+## Example:
 
-  ./QPRs 13
+  - ./QPRs 13
 
-Result: 13
+> [!NOTE]
+> Result: 13

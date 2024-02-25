@@ -5,7 +5,7 @@ Helps you find all prime roots of one number at a time quickly.
 Build:
 first navigate into build directory then:
 
-  cmake.
+  cmake .
   make
 
 Run:

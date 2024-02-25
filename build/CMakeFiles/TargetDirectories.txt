@@ -1,0 +1,3 @@
+/home/lucas/CLionProjects/QuickPrimeRoots/build/CMakeFiles/QPRs.dir
+/home/lucas/CLionProjects/QuickPrimeRoots/build/CMakeFiles/edit_cache.dir
+/home/lucas/CLionProjects/QuickPrimeRoots/build/CMakeFiles/rebuild_cache.dir

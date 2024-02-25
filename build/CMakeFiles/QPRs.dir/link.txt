@@ -1,1 +1,0 @@
-/usr/bin/c++ -pg CMakeFiles/QPRs.dir/home/lucas/CLionProjects/QuickPrimeRoots/src/main.cpp.o CMakeFiles/QPRs.dir/home/lucas/CLionProjects/QuickPrimeRoots/src/FindPrimeRoots.cpp.o -o QPRs 

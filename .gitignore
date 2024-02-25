@@ -1,0 +1,11 @@
+.idea/
+.git/
+cmake-build-debug/
+CMakeFiles/
+Testing/
+.cmake/
+CMakeCache.txt
+cmake_install.cmake
+gmon.out
+Makefile
+*.cbp

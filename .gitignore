@@ -5,7 +5,8 @@ CMakeFiles/
 Testing/
 .cmake/
 CMakeCache.txt
-cmake_install.cmake
 gmon.out
 Makefile
 *.cbp
+*.cmake
+*.marks

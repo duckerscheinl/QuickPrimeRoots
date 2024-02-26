@@ -4,7 +4,7 @@ project(QuickPrimeRoots)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_FLAGS -pg)
 
-add_executable(QPRs
+add_executable(${PROJECT_NAME}
         ../src/main.cpp
         ../src/FindPrimeRoots.cpp
         ../src/FindPrimeRoots.h
@@ -12,3 +12,7 @@ add_executable(QPRs
         ../src/FirstIntRoots.cpp
         ../src/IntRootsWSqrt.h
         ../src/IntRootsWSqrt.cpp)
+
+set(IRF_LIB IterativeRootFinders)
+target_link_libraries(${PROJECT_NAME} ${IRF_LIB})
+add_subdirectory(../src ../src/build)

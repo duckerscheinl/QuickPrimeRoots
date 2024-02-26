@@ -1,0 +1,14 @@
+//
+// Created by lucas on 26.02.24.
+//
+
+#ifndef QUICKPRIMEROOTS_ANDERSONBJORCK_H
+#define QUICKPRIMEROOTS_ANDERSONBJORCK_H
+
+
+class AndersonBjorck {
+
+};
+
+
+#endif //QUICKPRIMEROOTS_ANDERSONBJORCK_H

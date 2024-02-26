@@ -16,10 +16,10 @@ int main(int argc, char* argv[]) {
     }
 
 
-    IntRootsWSqrt rf;
+    /*IntRootsWSqrt rf;
     FindPrimeRoots<IntRootsWSqrt> prs;
     auto start_1 = std::chrono::high_resolution_clock::now();
-    /*std::vector<long> res = prs(k, rf);
+    std::vector<long> res = prs(k, rf);
     auto end_1 = std::chrono::high_resolution_clock::now();
     auto duration1 = std::chrono::duration_cast<std::chrono::milliseconds>(end_1-start_1);
     std::for_each(res.begin(), res.end(), [](long a){printf("%ld ", a);});

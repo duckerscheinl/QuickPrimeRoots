@@ -19,23 +19,23 @@ public:
 };
 
 template<class RootFinder>
-std::vector<long> FindPrimeRoots<RootFinder>::operator()(long k, RootFinder rf) {
+std::vector<long> FindPrimeRoots<RootFinder>::operator()(long k, RootFinder root_finder) {
     if (k<1) return {};
     std::vector<long> res{};
-    FindPrimeRoots<RootFinder>::operator()(k,res,rf);
+    FindPrimeRoots<RootFinder>::operator()(k,res,root_finder);
     return res;
 }
 
 template<class RootFinder>
-void FindPrimeRoots<RootFinder>::operator()(long k, std::vector<long> & vec, RootFinder rf) {
+void FindPrimeRoots<RootFinder>::operator()(long k, std::vector<long> & vec, RootFinder root_finder) {
 
-    std::pair<long,long> roots = rf(k);
+    std::pair<long,long> roots = root_finder(k);
 
     if (roots.second == k) vec.push_back(k);
     else
     {
-        FindPrimeRoots::operator()(roots.first, vec, rf);
-        FindPrimeRoots::operator()(roots.second, vec, rf);
+        FindPrimeRoots::operator()(roots.first, vec, root_finder);
+        FindPrimeRoots::operator()(roots.second, vec, root_finder);
     }
 }
 

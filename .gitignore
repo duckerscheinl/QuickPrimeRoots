@@ -10,3 +10,4 @@ Makefile
 *.cbp
 *.cmake
 *.marks
+*.a

@@ -8,8 +8,8 @@ add_executable(${PROJECT_NAME}
         ../src/main.cpp
         ../src/FindPrimeRoots.cpp
         ../src/FindPrimeRoots.h
-        ../src/FastFirstRoots.h
-        ../src/FastFirstRoots.cpp
+        ../src/FastSmart.h
+        ../src/FastSmart.cpp
         ../src/FastNaive.h
         ../src/FastNaive.cpp)
 

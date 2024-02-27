@@ -1,7 +1,8 @@
 #include <iostream>
 #include "FindPrimeRoots.h"
 #include "IntRootsWSqrt.h"
-#include "FirstIntRoots.h"
+#include "FastFirstRoots.h"
+#include "FastNaive.h"
 #include <cstdio>
 #include <chrono>
 #include <algorithm>
@@ -16,25 +17,25 @@ int main(int argc, char* argv[]) {
     }
 
 
-    /*IntRootsWSqrt rf;
-    FindPrimeRoots<IntRootsWSqrt> prs;
+    FastNaive rf;
+    FindPrimeRoots<FastNaive> prs;
     auto start_1 = std::chrono::high_resolution_clock::now();
     std::vector<long> res = prs(k, rf);
     auto end_1 = std::chrono::high_resolution_clock::now();
-    auto duration1 = std::chrono::duration_cast<std::chrono::milliseconds>(end_1-start_1);
+    auto duration1 = std::chrono::duration_cast<std::chrono::nanoseconds>(end_1-start_1);
     std::for_each(res.begin(), res.end(), [](long a){printf("%ld ", a);});
     printf("\n");
-    printf("IntRootWSqrt took: %ld \n", std::chrono::duration_cast<std::chrono::milliseconds>(duration1).count());*/
+    printf("FastNaive took: %ld \n", std::chrono::duration_cast<std::chrono::nanoseconds>(duration1).count());
 
-    FirstIntRoots rf2;
-    FindPrimeRoots<FirstIntRoots> prs2;
-    auto start_2 = std::chrono::high_resolution_clock::now();
-    std::vector<long> res2 = prs2(k, rf2);
-    auto end_2 = std::chrono::high_resolution_clock::now();
-    auto duration2 = std::chrono::duration_cast<std::chrono::milliseconds>(end_2-start_2);
-    std::for_each(res2.begin(), res2.end(), [](long a){printf("%ld ", a);});
+    FastFirstRoots rf3;
+    FindPrimeRoots<FastFirstRoots> prs3;
+    auto start_3 = std::chrono::high_resolution_clock::now();
+    std::vector<long> res3 = prs3(k, rf3);
+    auto end_3 = std::chrono::high_resolution_clock::now();
+    auto duration3 = std::chrono::duration_cast<std::chrono::nanoseconds>(end_3-start_3);
+    std::for_each(res3.begin(), res3.end(), [](long a){printf("%ld ", a);});
     printf("\n");
-    printf("FirstIntRoots took: %ld \n", std::chrono::duration_cast<std::chrono::milliseconds>(duration2).count());
+    printf("FastSmart took: %ld \n", std::chrono::duration_cast<std::chrono::nanoseconds>(duration3).count());
 
     return 0;
 }
